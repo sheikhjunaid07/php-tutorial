@@ -8,9 +8,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-               <a href="http://localhost/junaidphp/laracasts-php/db-connect" aria-current="page" class="<?= urlIs("/") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
-               <a href="http://localhost/junaidphp/laracasts-php/db-connectabout" class="<?= urlIs("/about") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
-              <a href="http://localhost/junaidphp/laracasts-php/db-connect/contact" class="<?= urlIs("/contact") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+               <a href="http://localhost/junaidphp/laracasts-php/db-connect/controllers/index.php" aria-current="page" class="<?= urlIs("/") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+               <a href="http://localhost/junaidphp/laracasts-php/db-connect/controllers/about.php" class="<?= urlIs("/about") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+               <a href="http://localhost/junaidphp/laracasts-php/db-connect/controllers/contact.php" class="<?= urlIs("/contact") ? "bg-gray-900 text-white" : "text-gray-300"?> block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
             </div>
           </div>
         </div>

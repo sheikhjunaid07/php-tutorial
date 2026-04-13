@@ -4,9 +4,9 @@
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
-    "/"       => "http://localhost/junaidphp/laracasts-php/page-links/controllers/index.php",
-    "/about"  => "http://localhost/junaidphp/laracasts-php/page-links/controllers/about.php",
-    "/contact"=> "http://localhost/junaidphp/laracasts-php/page-links/controllers/contact.php"
+    "/"       => "http://localhost/junaidphp/laracasts-php/db-connect/controllers/index.php",
+    "/about"  => "http://localhost/junaidphp/laracasts-php/db-connect/controllers/about.php",
+    "/contact"=> "http://localhost/junaidphp/laracasts-php/db-connect/controllers/contact.php"
 ];
 
 
