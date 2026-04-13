@@ -1,0 +1,17 @@
+
+//old way to database connection  { using - PDO [PHP Data Objects] }  
+
+// $dsn = "mysql:host=localhost;port=3306;dbname=myapp;user=root;charset=utf8mb4";
+
+// $pdo = new PDO($dsn);   //dsn - data source name
+
+// $statement = $pdo->prepare("select * from post");
+// $statement->execute();
+
+// $post = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+// // dump_and_die($posts);
+
+// foreach ($post as $p){
+//     echo "<li>" . $p["title"] . "</li>";
+// }
