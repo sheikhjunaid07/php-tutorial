@@ -1,6 +1,6 @@
 <?php
 
-$heading = "Notes";
+$heading = "My Notes";
 
 $notes = $db->query("select * from notes")->fetchAll();
 
