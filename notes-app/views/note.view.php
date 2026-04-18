@@ -1,11 +1,15 @@
-<?php require("partials/head.php") ?>
-<?php require("partials/nav.php") ?>
-<?php require("partials/banner.php") ?>
+<?php require('partials/head.php') ?>
+<?php require('partials/nav.php') ?>
+<?php require('partials/banner.php') ?>
 
-  <main>
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
-                <p><?= $note['title'] ?></p>
+<main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <p class="mb-6">
+            <a href="/junaidphp/notes-app/notes" class="text-blue-500 underline">Go back...</a>
+        </p>
+
+        <p><?= $note['title'] ?></p>
     </div>
-  </main>
+</main>
 
-<?php require("partials/foot.php") ?>
+<?php require('partials/foot.php') ?>

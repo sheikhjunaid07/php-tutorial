@@ -1,9 +1,19 @@
 <?php
 
-$heading = "My Note";
+$config = require('config.php');
+$db = new Database($config['database']);
 
-// dump_and_die($_GET['id']);
+$heading = 'Note';
+$currentUserId = 1;
 
-$note = $db->query("select * from notes where id = :id", ['id' => $_GET['id']])->fetch();
+$note = $db->query('select * from notes where id = :id', [
+    'id' => $_GET['id']
+    ])->fetch();
 
-require "views/notes.view.php";
+    //if note not available
+    if(! $note)  abort();
+
+
+    if(! $note['user_id'] !== $currentUserId) abort(Response::FORBIDDEN);  
+
+require "views/note.view.php";
