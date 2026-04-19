@@ -14,15 +14,9 @@ if ($uri === '' || $uri === '/index.php' || $uri === '/') {
     $uri = rtrim($uri, '/');
 }
 
-$routes = [
-    "/"        => "controllers/index.php",
-    "/about"   => "controllers/about.php",
-    "/notes"   => "controllers/notes.php",
-    "/note"    => "controllers/note.php",
-    "/contact" => "controllers/contact.php"
-];
+$routes = require("routes.php");
 
-function routeToController($uri, $routes, $db = null){
+function routeToController($uri, $routes){
     if(array_key_exists($uri, $routes)) {
         require $routes[$uri];
     } else {
@@ -33,8 +27,9 @@ function routeToController($uri, $routes, $db = null){
 function abort($code = 404){
     http_response_code(404);
     require "views/{$code}.php";
+    
     die();
 }
 
 
-routeToController($uri, $routes, $db ?? null);
+routeToController($uri, $routes);

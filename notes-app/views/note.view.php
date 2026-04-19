@@ -8,7 +8,7 @@
             <a href="/junaidphp/notes-app/notes" class="text-blue-500 underline">Go back...</a>
         </p>
 
-        <p><?= $note['title'] ?></p>
+        <p><?= $note['body'] ?></p>
     </div>
 </main>
 
