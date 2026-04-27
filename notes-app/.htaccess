@@ -1,7 +1,4 @@
-Options -MultiViews
+# Redirect all requests to public folder
 RewriteEngine On
-RewriteBase /junaidphp/notes-app
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
+RewriteCond %{REQUEST_URI} !^/junaidphp/notes-app/public
+RewriteRule ^(.*)$ public/$1 [L]
